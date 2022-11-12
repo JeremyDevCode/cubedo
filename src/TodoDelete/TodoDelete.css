@@ -6,6 +6,10 @@
 }
 
 .TrashContainer img {
+    width: 350px;
+}
+
+.TrashContainer img:last-child {
     width: 40%;
 }
 
@@ -44,6 +48,7 @@
 
 .TextTrashContainer p:last-child {
     font-size: 44px;
+    margin-top: 20px;
 }
 
 #dark .TextTrashContainer {

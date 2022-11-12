@@ -6,7 +6,7 @@
 }
 
 .ExplorerContainer img {
-    width: 40%;
+    width: 350px;
 }
 
 .Explorerp {
@@ -20,6 +20,7 @@
 .TextExplorerContainer p {
     text-align: center;
     font-size: 44px;
+    margin-top: 20px;
 
     color: #463939;
 }

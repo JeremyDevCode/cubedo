@@ -6,6 +6,10 @@
 }
 
 .DocumentContainer img {
+    width: 350px;
+}
+
+.DocumentContainer img:last-child {
     width: 40%;
 }
 
@@ -26,6 +30,7 @@
 
 .TextContainer p:last-child {
     font-size: 44px;
+    margin-top: 20px;
 }
 
 .Create {
