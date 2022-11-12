@@ -16,7 +16,7 @@ function TodoDelete() {
         <img className="Trashrgb" src={trashrgb} alt="trash"/>
         <img className="Trashp" src={trashp} alt="trashp"/>
         <div  className="TextTrashContainer ">
-          <p>{language === 'spanish' ? 'La papelera de reciclaje aún está vacía, no hay ni una' : `The recycle bin is still empty, there is no`} <span>{language === 'spanish' ? ' tarea' : 'task'}</span>{language === 'spanish' ? ', ¡prueba el botón' : ', try the button'}<span  className="DeleteExample"><img src={trash} alt="Delete example"/></span><span>{language === 'spanish' ? ' para borrar alguno!' : 'to remove one!'}</span></p>
+          <p>{language === 'spanish' ? 'La papelera de reciclaje aún está vacía, no hay ni una' : `The recycle bin is still empty, there is no`} <span>{language === 'spanish' ? ' tarea' : 'task'}</span>{language === 'spanish' ? ', ¡prueba el botón' : ', try the button'}<span  className="DeleteExample"><img src={trash} alt="Delete example"/></span><span>{language === 'spanish' ? 'para borrar alguno!' : 'to remove one!'}</span></p>
         </div>
       </div>
     </>
