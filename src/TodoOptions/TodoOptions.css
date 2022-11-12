@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&subset=cyrillic');
+
+.TodoFilterContainer {
+    position: absolute;
+   
+    display: none;
+    grid-template-columns: auto auto;
+    
+    place-items: center;
+    place-content: center;
+
+    gap: 20px;
+
+    top: 310px;
+    right: 4%;
+
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+
+    background: #EAEAEA;
+
+    z-index: 1;
+}
+
+.show {
+    display: grid;
+}
+
+input{
+  display:none;  
+}
+
+.span:last-child {
+  display: none;
+}
+
+.span{
+  text-transform:uppercase;
+  font-family:'Roboto Condensed', sans-serif;
+  font-weight:bold;
+  letter-spacing:1px;
+  font-size:15px;
+  width:85px;
+  margin: 0;
+}
+
+.language {
+  display: none;
+}
+
+.label{
+  width:50px;
+  height:25px;
+  box-sizing:border-box;
+  border:3px solid;
+  float:left;
+  border-radius:100px;
+  position:relative;
+  cursor:pointer;
+  transition:.3s ease;
+}
+
+input[type=checkbox]:checked + .label{
+  background:#55e868;
+}
+input[type=checkbox]:checked + .label:before{
+  left:25px;
+}
+
+.label:before{
+  transition:.3s ease;
+  content:'';
+  width:20px;
+  height:20px;
+  position:absolute;
+  background:white;
+  left:2px;
+  top:0;
+  box-sizing:border-box;
+  border:3px solid;
+  color:black;
+  border-radius:100px;
+}
+
+#dark .TodoFilterContainer {
+    background: #413F42;
+}
+
+#dark .span {
+    color: #F6FAFB;
+}
+
+@media (max-width: 500px) {
+    .TodoFilterContainer {
+      top: 240px;
+      width: 200px;
+      height: 150px;
+    }
+
+    .span {
+      font-size: 12px;
+    }
+
+    .label {
+      height: 20px;
+    }
+
+    .label:before {
+      width: 15px;
+      height: 15px;
+    }
+
+    .span:last-child {
+      display: block;
+    }
+
+    .language {
+      display: block;
+    }
+
+    .language img {
+      width: 36px;
+      height: 28px;
+    }
+    
+}

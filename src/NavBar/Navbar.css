@@ -1,0 +1,120 @@
+.NavContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #62B4FE;
+}
+
+.LogoContainer {
+  width: 200px;
+}
+
+.LogoContainer img {
+  width: 64px;
+  border-radius: 50%;
+}
+
+.Text {
+  color: #594746;
+}
+
+  .ChangeContainer {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Language img {
+    width: 44px;
+    height: 34px;
+
+    cursor: pointer;
+  }
+
+  .ChangeMode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    object-fit: cover;
+  
+    width: 64px;
+    height: 64px;
+  
+    border-radius: 50px;
+    background: #FF7461;
+
+    cursor: pointer;
+  
+    z-index: 0;
+  }
+
+  .ChangeMode:hover {
+    opacity: 0.9;
+  }
+  
+  #dark .ChangeMode {
+    background: #BCD6A7;
+  }
+  
+  #light .light {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    background: url(../assets/icons/sun.png) center center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    z-index: 1000;
+  }
+  
+  
+  #dark .dark {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    background: url(../assets/icons/moon.png) center center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    z-index: 1000;
+  }
+
+  #dark .NavContainer {
+    background: #AA99FF;
+  }
+
+  #dark .Text {
+    color: #F6FAFB;
+  }
+
+  @media (max-width: 500px) {
+    .NavContainer {
+      padding: 5px 15px;
+    }
+    .LogoContainer {
+      width: 70px;
+    }    
+
+    .LogoContainer img {
+      width: 48px;
+      height: 48px;
+    }
+
+    .ChangeContainer {
+      width: 70px;
+    }
+
+    .Language img {
+      display: none;
+      width: 26px;
+      height: 20px;
+    }
+
+    .ChangeMode {
+      width: 48px;
+      height: 48px;
+    }
+  }
