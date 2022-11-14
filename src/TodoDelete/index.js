@@ -2,13 +2,10 @@ import React from "react";
 import trash from '../assets/icons/trash-can-regular.svg';
 import trashrgb from "../assets/icons/trash-can-dynamic-gradient.png"
 import trashp from "../assets/icons/trash-can-dynamic-premium.png"
-import { TodoContext } from "../TodoContext";
 import './TodoDelete.css';
 
 
-function TodoDelete() {
-
-  const { language } = React.useContext(TodoContext);
+function TodoDelete({ language }) {
 
   return (
     <>

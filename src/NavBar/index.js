@@ -1,13 +1,11 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext';
+
 import logo from '../assets/icons/logo.png';
 import spanish from "../assets/icons/spanish.png";
 import english from "../assets/icons/english.png";
 import './Navbar.css';
 
-function NavBar(props) {
-   
-    const {theme, language, addSpanish, addEnglish } = React.useContext(TodoContext);
+function NavBar({theme, toggleTheme, language, addSpanish, addEnglish }) {
 
     const onClickIdiom = () => {
       if(language === 'spanish') {
@@ -34,7 +32,7 @@ function NavBar(props) {
         </div>
 
         <div className="ChangeMode">
-            <div onClick={props.toggleTheme} defaultChecked={theme === "light"} className="light dark"></div>
+            <div onClick={toggleTheme} defaultChecked={theme === "light"} className="light dark"></div>
         </div>
       </div>
     </div>

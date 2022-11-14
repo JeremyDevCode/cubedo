@@ -1,9 +1,9 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext';
+
 import './TodoCounter.css';
 
-function TodoCounter() {
-  const { completedTodos, totalTodos, totalDelete, del, language } = React.useContext(TodoContext);
+function TodoCounter({ totalTodos, completedTodos, del, totalDelete, language}) {
+  
   return (
     <>
       <h2 className={`${del === "delete" ? 'none' : 'TodoCounter'}`}>{language === 'spanish' ? `Has completado ${ completedTodos } de ${ totalTodos } tareas` : `You have completed ${ completedTodos } of ${ totalTodos } tasks`}</h2>

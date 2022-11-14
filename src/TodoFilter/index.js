@@ -1,15 +1,9 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext';
 import trash from "../assets/icons/trash-solid.svg";
 import arrow from "../assets/icons/arrow.png";
 import './TodoFilter.css';
 
-function TodoFilter() {
-
-  const { 
-    del,
-    toggleFilterDeleted, 
-  } = React.useContext(TodoContext);
+function TodoFilter({ del, toggleFilterDeleted }) {
 
   return (
     <button     

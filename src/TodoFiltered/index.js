@@ -2,11 +2,8 @@ import React from "react";
 import filterrgb from "../assets/icons/eyedropper-dynamic-gradient.png";
 import filterc from "../assets/icons/eyedropper-dynamic-color.png";
 import './TodoFiltered.css';
-import { TodoContext } from "../TodoContext";
 
-function TodoFiltered() {
-
-    const { fil, language } = React.useContext(TodoContext);
+function TodoFiltered({ fil, language }) {
 
   return (
     <>

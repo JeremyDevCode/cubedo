@@ -6,7 +6,7 @@
 }
 
 .FilterContainer img {
-    width: 350px;
+    width: 30%;
 }
 
 .Filterc {
@@ -20,7 +20,7 @@
 .TextFilterContainer p {
     text-align: center;
     font-size: 44px;
-    margin-top: 20px;
+    margin: 20px 0 100px;
 
     color: #463939;
 }

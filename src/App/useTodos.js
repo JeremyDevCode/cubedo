@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
-const TodoContext = React.createContext();
 
-function TodoProvider(props) {
+
+function useTodos() {
 
     const {item: todos,
         saveItem: saveTodos,
@@ -108,8 +108,7 @@ function TodoProvider(props) {
       };
 
     const totalDelete = deleteTodos.length;
-    const completeDelete = deleteTodos.filter((todo) => todo.completed === true).length;
-    const incompleteDelete = deleteTodos.filter((todo) => todo.completed === false).length;
+    
 
      const todosFiltered = filter();
     
@@ -190,44 +189,51 @@ function TodoProvider(props) {
         modal.classList.toggle('dark');
     }
 
-    return (
-        <TodoContext.Provider value={{
-            loading,
-            error,
-            totalTodos,
-            completedTodos,
-            searchValue,
-            setSearchValue,
-            addTodo,
-            completeTodo,
-            deleteTodo,
-            fullDeleteTodo,
-            restoreTodo,
-            contTodo,
-            delTodo,
-            totalDelete,
-            completeDelete,
-            incompleteDelete,
-            fil,
-            del,
-            toggleFilterComplete,
-            toggleFilterUncomplete,
-            toggleFilterDeleted,
-            filterComplete,
-            filterUncomplete,
-            todosFiltered,
-            openModal,
-            setOpenModal,
-            theme,
-            toggleTheme,
-            language,
-            addSpanish,
-            addEnglish,
-        }}>
-            {props.children}
-        </TodoContext.Provider>
-    );
+    const state = {
+      theme,
+      language,
+    
+      loading,
+      error,
+    
+      searchValue,
+    
+      totalTodos,
+      completedTodos,
+    
+      del,
+      totalDelete,
+    
+      fil,
+      todosFiltered,
+      
+      openModal,
+    };
+
+    const stateUpdaters = {
+      toggleTheme,
+      addSpanish,
+      addEnglish,
+    
+      setSearchValue,
+    
+      addTodo,
+      completeTodo,
+      deleteTodo,
+      fullDeleteTodo,
+      restoreTodo,
+      contTodo,
+      delTodo,
+      
+      toggleFilterComplete,
+      toggleFilterUncomplete,
+      toggleFilterDeleted,
+    
+      setOpenModal,
+    };
+
+    return { state, stateUpdaters };
  }
 
 
-export { TodoContext, TodoProvider };
+export { useTodos };

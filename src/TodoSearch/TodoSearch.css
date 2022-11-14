@@ -69,6 +69,10 @@
       background-repeat: no-repeat;
       z-index: 1000;
   }
+
+  .Search:disabled {
+    opacity: 0.5;
+  }
   
 
 #dark .TodoSearch {

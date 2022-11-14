@@ -2,11 +2,10 @@ import React from "react";
 import explorerp from "../assets/icons/explorer-dynamic-premium.png";
 import explorerc from "../assets/icons/explorer-dynamic-colorx.png";
 import './TodoSearched.css';
-import { TodoContext } from "../TodoContext";
 
-function TodoSearched() {
 
-    const { searchValue, language } = React.useContext(TodoContext);
+function TodoSearched({ searchValue, language }) {
+  
   return (
     <>
       <div className="ExplorerContainer">

@@ -6,7 +6,7 @@
 }
 
 .TrashContainer img {
-    width: 350px;
+    width: 30%;
 }
 
 .TrashContainer img:last-child {
@@ -25,7 +25,6 @@
 }
 
 .TextTrashContainer p:first-child {
-    
     font-size: 44px;
 }
 
@@ -48,7 +47,7 @@
 
 .TextTrashContainer p:last-child {
     font-size: 44px;
-    margin-top: 20px;
+    margin: 20px 0 100px;
 }
 
 #dark .TextTrashContainer {

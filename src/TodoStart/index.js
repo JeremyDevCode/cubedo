@@ -1,14 +1,9 @@
 import React from "react";
 import document from "../assets/icons/document.png"
-
 import './TodoStart.css';
-import { TodoContext } from "../TodoContext";
 
-function TodoStart() {
 
-  const { language } = React.useContext(TodoContext);
-
-  
+function TodoStart({ language }) {  
 
   return (
     <>

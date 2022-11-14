@@ -1,10 +1,8 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext';
 import search from '../assets/icons/magnifying-glass-solid.svg';
 import './TodoSearch.css';
 
-function TodoSearch(props) {
-  const { searchValue, setSearchValue, language } = React.useContext(TodoContext);
+function TodoSearch({ searchValue, setSearchValue, language, loading}) {
   const Options = document.querySelector('.TodoFilterContainer');
   const onSearchValueChange = (event) => {
     setSearchValue(event.target.value);
@@ -22,6 +20,7 @@ function TodoSearch(props) {
           className='Search'
           onChange={onSearchValueChange}
           value={searchValue}
+          disabled={loading}
         
           placeholder={language === 'spanish' ? 'Buscar' : 'Search'} 
         />

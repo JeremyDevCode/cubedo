@@ -1,19 +1,10 @@
 import React from 'react';
-import { TodoContext } from '../TodoContext';
+
 import spanish from "../assets/icons/spanish.png";
 import english from "../assets/icons/english.png";
 import './TodoOptions.css';
 
-function TodoOptions() {
-
-  const { 
-    toggleFilterComplete,
-    toggleFilterUncomplete,
-    fil,
-    language,
-    addSpanish,
-    addEnglish
-  } = React.useContext(TodoContext);
+function TodoOptions({ toggleFilterComplete, toggleFilterUncomplete, fil, language, addSpanish, addEnglish }) {
 
     const onClickIdiom = () => {
       if(language === 'spanish') {

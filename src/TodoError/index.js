@@ -1,11 +1,8 @@
 import React from "react";
 import caution from "../assets/icons/caution.png"
-import { TodoContext } from "../TodoContext";
 import './TodoError.css';
 
-function TodoError() {
-
-  const { language } = React.useContext(TodoContext);
+function TodoError({ language }) {
 
   return (
     <>

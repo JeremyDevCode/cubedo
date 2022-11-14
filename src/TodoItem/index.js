@@ -1,41 +1,35 @@
 import React from 'react';
-import './TodoItem.css';
 import check from '../assets/icons/check-solid.svg';
 import trash from '../assets/icons/trash-can-regular.svg';
 import tick from '../assets/icons/restore.webp';
 import bomb from '../assets/icons/bomb.png';
-import { TodoContext } from '../TodoContext';
+import './TodoItem.css';
 
-function TodoItem(props) {
-
-  const { 
-    del,
-  } = React.useContext(TodoContext);
-
+function TodoItem({ completed, onComplete, OnRestore, onDelete, onFullDelete, text, del }) {
 
   return (
-    <li className={`TodoItem ${props.completed && 'TodoItem--active'}`}>
+    <li className={`TodoItem ${completed && 'TodoItem--active'}`}>
       <img 
         src={check}
-        onClick={props.onComplete}
-        className={`Icon Icon-check ${props.completed && 'Icon-check--active'} ${del === "delete" ? 'none' : 'Icon'}`} alt="check"/>
+        onClick={onComplete}
+        className={`Icon Icon-check ${completed && 'Icon-check--active'} ${del === "delete" ? 'none' : 'Icon'}`} alt="check"/>
       <img
         src={tick}
-        onClick={props.OnRestore}
+        onClick={OnRestore}
         className={`Icon-restore ${del === "delete" ? 'Icon' : 'none'}`}
         alt="restore"/>
 
-      <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
-        {props.text}
+      <p className={`TodoItem-p ${completed && 'TodoItem-p--complete'}`}>
+        {text}
       </p>
       <img
         src={trash}
-        onClick={props.onDelete} 
+        onClick={onDelete} 
         className={`Icon-delete ${del === "delete" ? 'none' : 'Icon'}`} alt="trash"/>
       
       <img
         src={bomb}
-        onClick={props.onFullDelete}
+        onClick={onFullDelete}
         className={`Icon-fulldelete ${del === "delete" ? 'Icon' : 'none'}`}
         alt="bomb"/>
     </li>
