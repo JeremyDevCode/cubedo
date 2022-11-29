@@ -1,0 +1,130 @@
+.TodoItem {
+    background-color: #FFFFFF;
+    position: relative;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px; 
+    word-wrap: break-word;
+  /*  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15); */
+  }
+
+  .TodoItem:last-child {
+    margin-bottom: 80px;
+  }
+
+  .TodoItem--active {
+    background: #EEEEED;
+    opacity: 0.5;
+  }
+  
+  .TodoItem-p {
+    margin: 24px 70px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .TodoItem-p--complete {
+    text-decoration: line-through;
+  }
+  
+  .Icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
+    /* background-color: #CCC; */
+  }
+
+  .none {
+    display: none;
+  }
+  
+  .Icon-check {
+    position: absolute;
+    left: 25px;
+
+    width: 28px;
+
+    filter: invert(92%) sepia(8%) saturate(122%) hue-rotate(321deg) brightness(87%) contrast(90%);
+  }
+  .Icon-check--active {
+    filter: invert(92%) sepia(16%) saturate(668%) hue-rotate(38deg) brightness(87%) contrast(88%);
+  }
+
+  .Icon-edit {
+    position: absolute;
+    right: 72px;
+
+    width: 24px;
+
+    filter: invert(92%) sepia(8%) saturate(122%) hue-rotate(321deg) brightness(87%) contrast(90%);
+  }
+
+  .Icon-edit:hover {
+    filter: invert(7%) sepia(8%) saturate(448%) hue-rotate(314deg) brightness(94%) contrast(83%);
+  }
+  
+  .Icon-delete {
+    position: absolute;
+    right: 25px;
+
+    width: 24px;
+    
+    filter: invert(54%) sepia(94%) saturate(1116%) hue-rotate(321deg) brightness(101%) contrast(100%);
+  }
+  
+  .Icon-fulldelete {
+    position: absolute;
+    right: 25px;
+    width: 4%;
+
+    object-fit: contain;
+  }
+
+  .Icon-restore {
+    position: absolute;
+    left: 10px;
+    width: 4%;
+    filter: invert(83%) sepia(14%) saturate(2720%) hue-rotate(176deg) brightness(100%) contrast(100%);
+    object-fit: contain;
+  }
+
+  #dark .Icon-restore {
+    filter: none
+  }
+
+#dark .TodoItem {
+  background: #3E4553;
+}
+
+#dark .TodoItem--active {
+  opacity: 0.5;
+}
+
+#dark .TodoItem-p {
+  color: #DBDCE1;
+}
+
+@media (max-width: 500px) { 
+  .Icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .Icon-fulldelete {
+    width: 36px;
+    height: 36px;
+  }
+
+  .Icon-restore {
+    width: 36px;
+    height: 36px;
+  }
+}

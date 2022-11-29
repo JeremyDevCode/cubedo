@@ -1,0 +1,217 @@
+.PageNotFound {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+}
+
+.ImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 100vh;
+
+    background: #FFFFFF;
+}
+
+.error404 {
+    display: none;
+}
+
+.ImageContainer img {
+    width: 80%;
+}
+
+.NotFoundContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 0 40px;
+
+    width: 50%;
+    height: 100vh;
+
+    background: #262424;
+    color: #FFFFFF;
+}
+
+.NotFoundContainer h1 {
+    font-size: 78px;   
+}
+
+.NotFoundContainer p {
+    margin: 0;
+    color: #BDBCBB;
+}
+
+.NotFoundContainer span {
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #FFFFFF;
+}
+
+.NotFoundContainer div button {
+    margin: 44px 24px 0 0;
+    transition: 0.3s;
+}
+
+.NotFoundContainer div button:first-child {
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #B5E58C;
+
+    color: #262424;
+
+    background: #B5E58C;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+.NotFoundContainer div button:first-child:hover {
+    color: #B5E58C;
+
+    background: #262424;
+
+    cursor: pointer;
+}
+
+
+
+.NotFoundContainer div button:last-child {
+    width: 140px;
+    height: 50px;
+    border: 1px solid #B5E58C;
+    border-radius: 50px;
+
+    color: #B5E58C;
+
+    background: #262424;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    box-sizing: border-box;
+}
+
+.NotFoundContainer div button:last-child:hover {
+    color: #262424;
+
+    background: #B5E58C;
+
+    cursor: pointer;
+}
+
+.NotFoundContainerSpace {
+    margin-left: 40px;
+    width: 490px;
+}
+
+.Social {
+    position: absolute;
+    left: 80px;
+    bottom: 25px;
+}
+
+.Social img {
+    width: 36px;
+    margin-right: 24px;
+
+    cursor: pointer;
+    filter: invert(100%) sepia(13%) saturate(7500%) hue-rotate(281deg) brightness(118%) contrast(111%);
+}
+
+.Social img:nth-child(3){
+    border-radius: 50px;
+}
+
+.menu {
+    position: absolute;
+    top: 25px;
+    width: 465px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu ul li {
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu img {
+    width: 42px;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+
+    bottom: 224px;
+    height: 32px;
+
+    cursor: pointer;
+    filter: invert(100%) sepia(13%) saturate(7500%) hue-rotate(281deg) brightness(118%) contrast(111%);
+}
+
+@media (max-width: 950px) {
+
+    .PageNotFound {
+        height: 100%;
+    }
+
+    .ImageContainer {
+        display: none;
+    }
+    
+    .NotFoundContainer {
+        width: 950px;
+        height: 100%;
+    }
+
+    .NotFoundContainer h1 {
+        margin-top: 200px;
+    }    
+
+    .position {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100vh;
+    }
+
+    
+    .error404 {
+        display: block;
+        
+        margin-top: 50px;
+
+
+        height: 40%;
+    }
+
+    .arrow {
+        position: inherit;     
+    }
+
+    .Social {
+        position: fixed;
+    }
+}

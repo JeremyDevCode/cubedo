@@ -1,0 +1,19 @@
+.TodoFooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #62B4FE;
+    height: 55px;
+
+    z-index: 1;
+}
+
+#dark .TodoFooter {
+    background: #AA99FF;
+}
+
+@media (max-width: 500px) { 
+    .TodoFooter {
+        display: none;
+    }
+}

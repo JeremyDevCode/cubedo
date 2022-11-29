@@ -1,0 +1,426 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 9vh;
+    margin-bottom: 12px;
+}
+
+.Navbar img {
+    width: 48px;
+
+    margin-left: 132px;
+}
+
+.Navbar div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 56px;
+    width: 300px;
+}
+
+.Navbar li {
+    list-style: none;
+
+}
+
+.Navbar li:last-child {
+    margin-right: 132px;
+}
+
+.Navbar li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 48vh;
+}
+
+.Header div {
+    margin-left: 132px;
+    width: 30%;
+}
+
+.Header div button {
+align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #c8f1d4 0, #92e3a9 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  width: 150px;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+
+  margin-top: 20px;
+}
+
+.Header div button:focus {
+    box-shadow: #7c887c 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #7c887c 0 -3px 0 inset;
+}
+
+.Header div button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #7c887c 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.Header div button:active {
+    box-shadow: #7c887c 0 3px 7px inset;
+    transform: translateY(2px);
+}
+  
+
+.Header img {
+    width: 40%;
+    margin-right: 132px;
+  
+}
+
+.ServicesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    
+    height: 40vh;
+
+    margin: 12px 0 40px;
+}
+
+.ServicesSection h1 {
+    margin-bottom: 36px;
+}
+
+.ServicesSection .ServicesContainer > div {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 225px;
+
+    border-radius: 20px;
+    padding: 20px;
+    background: #FFFFFF;
+}
+
+.ServicesSection .ServicesContainer > div:nth-child(2) {
+    background: #92e3a9;
+}
+
+
+
+.ServicesSection .ServicesContainer div div {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ServicesSection .ServicesContainer div:first-child div {
+    background: #4285FC;
+}
+
+.ServicesSection .ServicesContainer div:nth-child(2) div {
+    background: #FFFFFF;
+}
+
+.ServicesSection .ServicesContainer div:last-child div {
+    background: #FFB31F;
+}
+
+.ServicesSection .ServicesContainer div img {
+    width: 40px;
+    height: 40px;
+    filter: invert(97%) sepia(25%) saturate(138%) hue-rotate(196deg) brightness(116%) contrast(100%);
+}
+
+.ServicesSection .ServicesContainer div:nth-child(2) img {
+    filter: invert(89%) sepia(4%) saturate(3662%) hue-rotate(74deg) brightness(108%) contrast(78%);
+}
+
+.ServicesSection .ServicesContainer div h2 {
+    margin: 16px 0;
+}
+
+.ServicesSection .ServicesContainer div p {
+    margin: 0;
+}
+
+.ServicesContainer {
+    display: flex;
+    gap: 24px;
+}
+
+.ViewContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 100vh;
+
+    background: #5762E3;
+
+}
+
+.PhoneBorder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 400px;
+    height: 80%;
+    border-radius: 50px 50px 0 0;
+
+    background: #8E97FF;
+
+    margin-left: 132px;
+}
+
+.PhoneTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 120px;
+    margin: 20px;
+}
+
+.PhoneCam {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    transform: translate(-10px);
+
+    background: #6C77FF;
+}
+
+.PhoneBar {
+    width: 100px;
+    height: 10px;
+    border-radius: 10px;
+
+    
+    background: #6C77FF;
+}
+
+.PhoneScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 90%;
+    height: 95%;
+    border-radius: 40px 40px 0 0;
+
+    background: #FFFFFF;
+}
+
+.PhoneTodo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    width: 500px;
+    height: 280px;
+    border-radius: 20px;
+
+    background: #FAFBFF;
+}
+
+.PhoneTodo div {
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+
+    width: 80%;
+}
+
+.PhoneTodo div:first-child {
+    justify-content: center;
+    font-size: 20px;
+}
+
+.PhoneTodo div:first-child h5 {
+    margin: 0;
+}
+
+.PhoneTodo div:nth-child(2) {
+    border: 2px solid #CED1F3;
+
+    color: #8E8F96;
+}
+
+.PhoneTodo div:nth-child(2) h5 {
+    margin-left: 16px;
+}
+
+.PhoneTodo div:last-child {
+    justify-content: center;
+
+    color: #FFFFFF;
+    background: #424cc1;
+}
+
+.PhoneSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+}
+
+.PhoneSection div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+
+    background: #CFD3FF;
+}
+
+.PhoneSection div:first-child {
+    color: #FFFFFF;
+    background: #424CC1;
+}
+
+.PhoneItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+
+    background: #CFD3FF;
+}
+
+.PhoneItem div {
+    display: flex;
+    align-items: center;
+}
+
+.PhoneItem span {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.PhoneItem img {
+    width: 20px;
+}
+
+.PhoneItem div img:first-child {
+    margin-left: 16px;
+    filter: invert(92%) sepia(16%) saturate(668%) hue-rotate(38deg) brightness(87%) contrast(88%);
+}
+
+.PhoneItem div:last-child img:first-child {
+    filter: invert(92%) sepia(8%) saturate(122%) hue-rotate(321deg) brightness(87%) contrast(90%);
+}
+
+.PhoneItem img:last-child {
+    margin: 0 16px;
+    filter: invert(54%) sepia(94%) saturate(1116%) hue-rotate(321deg) brightness(101%) contrast(100%);
+}
+
+.TextPhoneContainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+
+    margin: 0 132px 0 0;
+}
+
+.TextPhoneContainer h1 {
+    font-size: 90px;
+    margin: 16px 0;
+
+    color: #FFFFFF;
+}
+
+.TextPhoneContainer p {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    color: #BFC3F2;
+}
+
+.TextPhoneContainer span {
+    color: #BFC3F2;
+    margin-bottom: 20px;
+}
+
+.TextPhoneContainer a {
+    color: #BFC3F2;
+}
+
+.TextPhoneContainer img {
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+
+.FooterSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 135px;
+
+    color: #FFFFFF;
+    background: #27282C;
+}
+
+.FooterSection p {
+    font-size: 12px;
+
+    color: #DCD7C9;
+}
+
+.FooterSection img {
+    width: 50px;
+    cursor: pointer;
+}
