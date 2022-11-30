@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cubedo/static/css/main.5398b5da.css",
-    "main.js": "/cubedo/static/js/main.2814986a.js",
+    "main.css": "/cubedo/static/css/main.af8aee62.css",
+    "main.js": "/cubedo/static/js/main.a32f64ac.js",
     "static/media/Whatsapp3d.png": "/cubedo/static/media/Whatsapp3d.851b2860825a96d71567.png",
     "static/media/trash-can-dynamic-premium.png": "/cubedo/static/media/trash-can-dynamic-premium.d74f5dfdfdcd5409220c.png",
     "static/media/eyedropper-dynamic-color.png": "/cubedo/static/media/eyedropper-dynamic-color.a8273f40239c084a8427.png",
@@ -39,11 +39,11 @@
     "static/media/arrow-left-solid.svg": "/cubedo/static/media/arrow-left-solid.c2f448c5164d01e45bc203e178803605.svg",
     "static/media/plus-solid.svg": "/cubedo/static/media/plus-solid.28864b29ad6d5de83a9a39f358f5f654.svg",
     "static/media/check-solid.svg": "/cubedo/static/media/check-solid.d77a6106b69459fb02faabc5c2925156.svg",
-    "main.5398b5da.css.map": "/cubedo/static/css/main.5398b5da.css.map",
-    "main.2814986a.js.map": "/cubedo/static/js/main.2814986a.js.map"
+    "main.af8aee62.css.map": "/cubedo/static/css/main.af8aee62.css.map",
+    "main.a32f64ac.js.map": "/cubedo/static/js/main.a32f64ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.5398b5da.css",
-    "static/js/main.2814986a.js"
+    "static/css/main.af8aee62.css",
+    "static/js/main.a32f64ac.js"
   ]
 }
