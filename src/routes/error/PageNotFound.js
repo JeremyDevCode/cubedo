@@ -53,7 +53,7 @@ function PageNotFound() {
                 </div>
                 <div className="Social">
                 <a href="https://github.com/JeremyDevCode" target="_blank" rel="noreferrer"><img src={github} alt="github"/></a>
-                <a href="https://www.linkedin.com/in/jeremydeveloper" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin"/></a>
+                <a href="https://www.linkedin.com/in/jeremydev/" target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin"/></a>
                 <CopyToClipboard text="Jeremy  ☁#8166">
                     <img src={discord} onClick={() => toast.success(`${language === 'spanish' ? '¡Copiado!' : 'Copied!'}`, {style: {background: "#262424", color: "#FFFFFF" } } )} alt="discord"/>
                 </CopyToClipboard>

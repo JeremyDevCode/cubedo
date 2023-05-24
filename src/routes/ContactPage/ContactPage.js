@@ -77,7 +77,7 @@ function ContactPage() {
             <div className='SocialMedia'>
                     <a href='https://api.whatsapp.com/send/?phone=593978686750&text=Hi+Jeremy%21+I%27m+interested+in+your+profile.+Let%27s+Talk' target="_blank" rel="noreferrer"><img src={whatsapp} alt="whatsapp"/></a>
                         
-                    <a href='https://www.linkedin.com/in/jeremydeveloper' target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin"/></a>   
+                    <a href='https://www.linkedin.com/in/jeremydev/' target="_blank" rel="noreferrer"><img src={linkedin} alt="linkedin"/></a>   
                     <CopyToClipboard text="Jeremy  ☁#8166">
                     <img src={discord} onClick={() => toast.success(`${language === 'spanish' ? '¡Copiado!' : 'Copied!'}`, {style: {background: "#F6FAFB" } } )} alt="discord"/>
                     </CopyToClipboard>
